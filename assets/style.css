@@ -1,0 +1,115 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Rokkitt', serif;
+}
+header {
+	background: white;
+	position: sticky;
+	position: -webkit-sticky;
+	display: flex;
+	top: 0;
+	margin: 20px;
+	z-index: 1;
+}
+.brand {
+	font-size: 60px;
+	color: black;
+}
+.link {
+	font-size: 20px;
+	margin: 30px 80px 0 80px;
+}
+.brand:hover {
+	color: black;
+	color: pink;
+	transition: 0.2 all ease;
+}
+a {
+	color: steelblue;
+	text-decoration: none;
+}
+a:hover {
+	color: steelblue;
+	color: pink;
+	transition: 0.2s all ease;
+}
+.wrapper {
+	display: flex;
+}
+img {
+	max-width: 100%;
+	width: 400px;
+	height: 400px;
+	object-fit: scale-down;
+}
+.text {
+	font-size: 60px;
+	padding: 160px 0;
+	margin: 0 20px 0 80px;
+}
+.child {
+	position: relative;
+	margin: 40px;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+ 	position: absolute;
+ 	font-size: 32px;
+ 	background: white;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	padding: 0 10px 0 10px;
+}
+.middle:hover {
+	opacity: 1;
+}
+@media only screen and (max-width: 900px){
+	.brand {
+		font-size: 48px;
+	}
+	.text {
+		font-size: 48px;
+	}
+	.middle {
+		font-size: 20px;
+		text-align: center;
+	}
+	.child {
+		margin: 20px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	header {
+		display: block;
+		text-align: center;
+	}
+	.link {
+		margin: 0;
+	}
+	.wrapper {
+		display: block;
+	}
+	.text {
+		font-size: 45px;
+		text-align: center;
+		margin: 0;
+		padding: 0 0 80px 0;
+	}
+	.child {
+		margin: 40px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.brand {
+		font-size: 38px;
+	}
+	.text {
+		font-size: 38px;
+		padding: 0;
+	}
+}
