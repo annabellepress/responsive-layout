@@ -3,6 +3,7 @@ html {
 }
 body {
 	font-family: 'Rokkitt', serif;
+	white-space: nowrap;
 }
 header {
 	background: white;
